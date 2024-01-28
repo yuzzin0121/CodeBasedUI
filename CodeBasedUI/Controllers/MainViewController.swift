@@ -98,9 +98,7 @@ class MainViewController: UIViewController, ViewProtocol {
         
         buttonStackView.design(spacing: 16)
         playButton.configuration = .imageStyle(image: UIImage(named: "play"), title: "재생", foregroundColor: .black, backgroundColor: .white)
-        playButton.titleLabel?.font = .systemFont(ofSize: 12)
         myListButton.configuration = .imageStyle(image: UIImage(systemName: "plus"), title: "내가 찜한 리스트", foregroundColor: .white, backgroundColor: .gray)
-        myListButton.titleLabel?.font = .systemFont(ofSize: 12)
         
         nowHotContents.design(text: "지금 뜨는 콘텐츠", font: .boldSystemFont(ofSize: 16))
         

@@ -8,7 +8,7 @@
 import UIKit
 
 extension UILabel {
-    func design(text: String, font: UIFont = .systemFont(ofSize: 14), textColor: UIColor = .white, backgroundColor: UIColor? = nil, textAlignment: NSTextAlignment  = .left) {
+    func design(text: String, font: UIFont = .systemFont(ofSize: 14), textColor: UIColor = .white, backgroundColor: UIColor? = nil, textAlignment: NSTextAlignment  = .left, numberOfLines: Int = 1) {
         self.text = text
         self.font = font
         self.textColor = textColor
@@ -16,5 +16,6 @@ extension UILabel {
         if let backgroundColor {
             self.backgroundColor = backgroundColor
         }
+        self.numberOfLines = numberOfLines
     }
 }
