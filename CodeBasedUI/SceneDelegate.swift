@@ -18,7 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         
         let tabBarC = TabBarController()
-        window?.rootViewController = tabBarC
+        window?.rootViewController = HomeViewController()
+        // 스토리보드 기반 뷰컨 vs 코드 기반 뷰컨 : 작성되는 형태가 다르다
+//        window?.rootViewController = HomeViewController()
         window?.makeKeyAndVisible()
     }
 

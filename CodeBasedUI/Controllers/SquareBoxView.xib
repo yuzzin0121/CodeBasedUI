@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SquareBoxView" customModule="CodeBasedUI" customModuleProvider="target">
+            <connections>
+                <outlet property="posterImageView" destination="qL8-Oh-MjR" id="uXt-az-baH"/>
+                <outlet property="titleLabel" destination="HJ8-bl-Nfl" id="hcW-Vz-FSp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WRu-WS-fgZ">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="445"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ8-bl-Nfl">
+                    <rect key="frame" x="8" y="415" width="275" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="TEn-YG-AnT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qL8-Oh-MjR">
+                    <rect key="frame" x="8" y="8" width="275" height="395"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="DgY-3x-hOe"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DgY-3x-hOe" firstAttribute="bottom" secondItem="qL8-Oh-MjR" secondAttribute="bottom" constant="8" id="2CJ-G7-b0W"/>
+                <constraint firstItem="qL8-Oh-MjR" firstAttribute="top" secondItem="WRu-WS-fgZ" secondAttribute="top" constant="8" id="AwQ-vC-vKV"/>
+                <constraint firstAttribute="bottom" secondItem="HJ8-bl-Nfl" secondAttribute="bottom" constant="8" id="Bu5-ml-WmW"/>
+                <constraint firstItem="DgY-3x-hOe" firstAttribute="trailing" secondItem="qL8-Oh-MjR" secondAttribute="trailing" constant="8" id="L0z-vH-oIS"/>
+                <constraint firstItem="qL8-Oh-MjR" firstAttribute="leading" secondItem="DgY-3x-hOe" secondAttribute="leading" constant="8" id="TrH-V9-MRZ"/>
+                <constraint firstItem="HJ8-bl-Nfl" firstAttribute="leading" secondItem="DgY-3x-hOe" secondAttribute="leading" constant="8" id="W3F-zX-e4A"/>
+                <constraint firstItem="DgY-3x-hOe" firstAttribute="trailing" secondItem="HJ8-bl-Nfl" secondAttribute="trailing" constant="8" id="sYM-yn-Wu3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="37.404580152671755" y="-139.78873239436621"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
